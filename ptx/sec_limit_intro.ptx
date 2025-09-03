@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <section xml:id="sec_limit_intro" label="sec_limit_intro">
   <title>An Introduction To Limits</title>
   <p>
@@ -1875,7 +1875,7 @@
 
             <p>
               The case where the limit is equal to <m>f(5)</m> has a special name;
-              we will consider this in detail in <xref ref="sec_continuity"/>.
+              <!-- we will consider this in detail in <xref ref="sec_continuity"/>. -->
             </p>
           </feedback>
         <!-- </webwork> -->

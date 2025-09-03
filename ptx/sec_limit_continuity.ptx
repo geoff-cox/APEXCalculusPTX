@@ -371,7 +371,7 @@
     </p>
 
     <p>
-      Some results, such as <xref ref="thm_extreme_val" text="title"/>,
+      <!-- Some results, such as <xref ref="thm_extreme_val" text="title"/>, -->
       are valid for intervals of the form <m>[a,b]</m>,
       but not for intervals such as <m>[a,\infty)</m>.
       The latter interval is closed, but not <term>bounded</term>.
@@ -384,7 +384,7 @@
       (an upper bound), and a number that is less than every element in the set (a lower bound).
       When we do calculus in higher dimensions, we can no longer talk about intervals,
       but we can still talk about sets being closed and bounded.
-      See <xref ref="sec_multi_extreme_values"/> for details.
+      <!-- See <xref ref="sec_multi_extreme_values"/> for details. -->
     </p>
   </aside>
 
@@ -1488,7 +1488,7 @@
     </p>
 
     <p>
-      In <xref ref="sec_newton"/>
+      <!-- In <xref ref="sec_newton"/> -->
       another equation solving method will be introduced, called Newton's Method.
       In many cases, Newton's Method is much faster.
       It relies on more advanced mathematics, though,

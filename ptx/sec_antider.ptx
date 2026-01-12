@@ -738,8 +738,7 @@
       In the next section,
       we will see how position and velocity are unexpectedly related by the
       areas of certain regions on a graph of the velocity function.
-      Then, in <xref ref="sec_FTC"/>,
-      we will see how areas and antiderivatives are closely tied together.
+      Later we will see how areas and antiderivatives are closely tied together.
       This connection is incredibly important,
       as indicated by the name of the theorem that describes it:
       The Fundamental Theorem of Calculus.

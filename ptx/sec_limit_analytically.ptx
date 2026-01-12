@@ -1026,8 +1026,7 @@
 
     in this case they are of the form <m>0/0</m>,
     except the third limit, which is of a different form.
-    You'll learn techniques to find these limits exactly using calculus in
-    <xref ref="sec_lhopitals_rule"/>.
+    You'll learn techniques to find these limits exactly using L'Hospital's Rule.
   </p>
 
   <p>

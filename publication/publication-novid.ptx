@@ -5,10 +5,10 @@
     <!-- Relative path, relative to "main" source file -->
     <source>
         <directories external="../assets" generated="../generated-assets"/>
-        <version include="main color novideo taypoly-late"/>
+        <version include="main color novideo proteus"/>
     </source>
 
-    <webwork server="https://webwork-dev.uleth.ca" course="apex-main"/>
+    <!-- <webwork server="https://webwork-dev.uleth.ca" course="apex-main"/> -->
 
     <common>
       <tableofcontents level="2"/>
@@ -21,7 +21,7 @@
         <index-page ref="apex-calculus"/>
         <video privacy="yes"/>
         <!-- baseurl should not have a trailing slash -->
-        <baseurl href="https://opentext.uleth.ca/apex-calculus"/>
+        <!-- <baseurl href="https://opentext.uleth.ca/apex-calculus"/> -->
         <knowl example="no"/>
         <asymptote links="yes"/>
         <webwork divisional="dynamic"/>

@@ -379,9 +379,6 @@
     The above example does not <em>prove</em>
     a relationship between area under a velocity function and displacement,
     but it does imply a relationship exists.
-    <xref ref="sec_FTC"/>
-    will fully establish fact that the area under a velocity function is
-    displacement.
   </p>
 
   <p>
@@ -445,8 +442,7 @@
     We have now defined the definite integral,
     which relates to areas under a function.
     The two are very much related,
-    as we'll see when we learn the Fundamental Theorem of Calculus in
-    <xref ref="sec_FTC"/>.
+    as we'll see when we learn the Fundamental Theorem of Calculus.
     Recall that earlier we said that the
     <q><m>\int</m></q> symbol was an <q>elongated S</q>
     that represented finding a <q>sum.</q>

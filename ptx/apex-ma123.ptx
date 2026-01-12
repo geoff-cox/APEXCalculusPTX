@@ -5,8 +5,7 @@
 
   <book xml:id="apex-calculus">
     <title>APEX Calculus</title>
-    <subtitle component="proteus-id">PROTEUS version</subtitle>
-    <subtitle component="playground-id">PROTEUS Playground</subtitle>
+    <subtitle>VMI MA123</subtitle>
     <frontmatter label="frontmatter">
       <bibinfo>
         <author>
@@ -21,17 +20,17 @@
           <institution>University of Lethbridge</institution>
         </editor>
 
-        <editor>
+        <!-- <editor>
           <personname>Alex Jordan, Ph.D.</personname>
           <department>Department of Mathematics</department>
           <institution>Portland Community College</institution>
-        </editor>
+        </editor> -->
 
-        <editor>
+        <!-- <editor>
           <personname>Carly Vollet, M.S.</personname>
           <department>Department of Mathematics</department>
           <institution>Portland Community College</institution>
-        </editor>
+        </editor> -->
 
         <date><today /></date>
 
@@ -79,24 +78,6 @@
     <xi:include href="./chapter_integration.ptx"/>
 
     <xi:include href="./chapter_anti_tech.ptx"/>
-
-    <xi:include href="./chapter_app_of_int.ptx"/>
-
-    <xi:include href="./chapter_differential_equations.ptx"/>
-
-    <xi:include href="./chapter_sequences_series.ptx"/>
-
-    <xi:include href="./chapter_planar_curves.ptx"/>
-
-    <xi:include href="./chapter_vectors.ptx"/>
-
-    <xi:include href="./chapter_vvf.ptx"/>
-
-    <xi:include href="./chapter_multi.ptx"/>
-
-    <xi:include href="./chapter_mult_int.ptx"/>
-
-    <xi:include href="./chapter_vector_calc.ptx"/>
 
     <backmatter label="backmatter">
       <appendix xml:id="appendix-proteus-exercises" component="proteus">

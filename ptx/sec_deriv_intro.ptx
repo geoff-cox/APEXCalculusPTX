@@ -1585,8 +1585,7 @@
     <p>
       Finally, in later sections,
       having the derivative defined on closed intervals will prove useful.
-      One such place is <xref ref="sec_arc_length"/>
-      where the derivative plays a role in measuring the length of a curve.
+      One such place is arclength where the derivative plays a role in measuring the length of a curve.
     </p>
 
     <p>
@@ -1727,8 +1726,6 @@
       we could remove the word <q>open</q>
       and just use <q><m>\ldots</m> on an interval <m>I</m>,</q>
       but choose to not do so in keeping with the current mathematical tradition.
-      Our first use of differentiability on closed intervals comes in <xref ref="chapter_app_of_int"/>,
-      where we measure the lengths of curves.
     </p>
 
     <p>

@@ -3,9 +3,7 @@
   <title>Limits Involving Infinity</title>
   <introduction>
     <p>
-      In <xref ref="def_limit"/>
-      we stated that in the equation <m>\lim_{x\to c}f(x) = L</m>,
-      both <m>c</m> and <m>L</m> were numbers.
+      In <xref ref="def_limit"/> we stated that in the equation <m>\lim_{x\to c}f(x) = L</m>, both <m>c</m> and <m>L</m> were numbers.
       In this section we relax that definition a bit by considering situations when it makes sense to let <m>c</m> and/or <m>L</m> be <q>infinity.</q>
     </p>
 
@@ -606,8 +604,7 @@
       (such as factoring and canceling),
       it may involve using trigonometric identities or logarithm rules,
       or it may require a tool such as the <xref text="title" ref="thm_sqz"/>.
-      In <xref ref="sec_lhopitals_rule"/>
-      we will learn yet another technique called L'Hospital's Rule that provides another way to handle indeterminate forms.
+      We will learn yet another technique called L'Hospital's Rule that provides another way to handle indeterminate forms.
     </p>
 
     <p>

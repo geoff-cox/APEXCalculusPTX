@@ -209,11 +209,11 @@
     since we are working with the pseudo-definition of a limit,
     not the actual definition.)
   </p>
+
   <figure xml:id="vid_limit_intro_sinxoverx" component="video" vshift="0">
     <caption>Investigating <m>\sin(x)/x</m></caption>
     <video youtube="__qzaSg4y1I" label="vid_limit_intro_sinxoverx"/>
   </figure>
-
 
   <p>
     Once we have the true definition of a limit,

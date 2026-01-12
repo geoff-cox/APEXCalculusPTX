@@ -487,11 +487,6 @@
 
   <subsection>
     <title>Integrals Involving Trigonometric Functions</title>
-    <p>
-      <xref ref="sec_trigint"/>
-      delves deeper into integrals of a variety of trigonometric functions;
-      here we use substitution to establish a foundation that we will build upon.
-    </p>
 
     <p>
       The next three examples will help fill in some missing pieces of our antiderivative knowledge.

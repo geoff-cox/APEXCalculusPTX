@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project ptx-version="2" source="ptx" asy-method="local">
   <targets>
-    <target name="html" format="html" source="apex.ptx" publication="publication-video.ptx">
+    <!-- <target name="html" format="html" source="apex.ptx" publication="publication-video.ptx">
+      <stringparams key="html.annotation" value="hypothesis"/>
+    </target> -->
+    <!-- <target name="html-novideo" format="html" source="apex.ptx" publication="publication-novid.ptx">
+      <stringparams key="html.annotation" value="hypothesis"/> -->
+    <target name="ma123" format="html" source="apex-ma123.ptx" publication="publication-novid.ptx">
       <stringparams key="html.annotation" value="hypothesis"/>
     </target>
-    <target name="html-novideo" format="html" source="apex.ptx" publication="publication-novid.ptx">
+    <!-- <target name="html-standard" format="html" source="apex-UL-standard.ptx" publication="publication-standard.ptx">
       <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
-    <target name="html-standard" format="html" source="apex-UL-standard.ptx" publication="publication-standard.ptx">
+    </target> -->
+    <!-- <target name="html-accelerated" format="html" source="apex-UL-accelerated.ptx" publication="publication-accelerated.ptx">
       <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
-    <target name="html-accelerated" format="html" source="apex-UL-accelerated.ptx" publication="publication-accelerated.ptx">
+    </target> -->
+    <!-- <target name="runestone" format="html" source="apex.ptx" publication="publication-runestone.ptx" output-dir="../published/APEX">
       <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
-    <target name="runestone" format="html" source="apex.ptx" publication="publication-runestone.ptx" output-dir="../published/APEX">
+    </target> -->
+    <!-- <target name="runestone-proteus" format="html" source="apex.ptx" publication="publication-runestone-proteus.ptx" output-dir="../published/APEX-PROTEUS">
       <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
-    <target name="runestone-proteus" format="html" source="apex.ptx" publication="publication-runestone-proteus.ptx" output-dir="../published/APEX-PROTEUS">
+    </target> -->
+    <!-- <target name="runestone-playground" format="html" source="apex.ptx" publication="publication-proteus-playground.ptx" output-dir="../published/APEXplayground">
       <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
-    <target name="runestone-playground" format="html" source="apex.ptx" publication="publication-proteus-playground.ptx" output-dir="../published/APEXplayground">
-      <stringparams key="html.annotation" value="hypothesis"/>
-    </target>
+    </target> -->
     <target name="latex" format="latex" source="apex.ptx" publication="publication.ptx" xsl="apex-latex-style.xsl"/>
     <target name="latex-novideo" format="latex" source="apex.ptx" publication="publication-novid.ptx" xsl="apex-latex-style.xsl"/>
     <target name="latex-print" format="latex" source="apex.ptx" publication="publication-print.ptx" xsl="apex-latex-print-style.xsl"/>

@@ -356,7 +356,6 @@
     \makeatother
   </latex-image-preamble>
 
-
   <asymptote-preamble component="color">
     import graph3;
     bool incolor;

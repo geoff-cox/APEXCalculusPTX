@@ -384,7 +384,6 @@
       (an upper bound), and a number that is less than every element in the set (a lower bound).
       When we do calculus in higher dimensions, we can no longer talk about intervals,
       but we can still talk about sets being closed and bounded.
-      See <xref ref="sec_multi_extreme_values"/> for details.
     </p>
   </aside>
 

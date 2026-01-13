@@ -2,7 +2,7 @@
 <project ptx-version="2" source="ptx" asy-method="local">
   <targets>
     <target name="ma123" format="html" source="apex-ma123.ptx" publication="publication.ptx">
-      <stringparams key="html.annotation" value="hypothesis"/>
+      <stringparams key="html.annotation" value="hypothesis" html.css.extra="external/custom-style/custom-styles.css"/>
     </target>
 		<target 
 			name="runestone"
@@ -11,8 +11,7 @@
 			source="apex-ma123.ptx"
 			publication="runestone.ptx"
 		>
-      <stringparams key="html.annotation" value="hypothesis"/>
-      <stringparams html.css.extra="external/custom-style/custom-styles.css" />
+      <stringparams key="html.annotation" value="hypothesis" html.css.extra="external/custom-style/custom-styles.css"/>
     </target>
 
     <!-- <target name="latex" format="latex" source="apex.ptx" publication="publication.ptx" xsl="apex-latex-style.xsl"/>

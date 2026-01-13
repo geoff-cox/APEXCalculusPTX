@@ -5,10 +5,10 @@
     <!-- Relative path, relative to "main" source file -->
     <source>
         <directories external="../assets" generated="../generated-assets"/>
-        <version include="main color video taypoly-late video-late"/>
+        <version include="main color novideo proteus"/>
     </source>
 
-    <webwork server="https://webwork-dev.uleth.ca" course="apex-main"/>
+    <webwork server="https://vmi-math.com/webwork2" course="apex"/>
 
     <common>
       <tableofcontents level="2"/>
@@ -17,15 +17,14 @@
     </common>
     <!-- HTML-Specific Options -->
     <html>
-        <calculator model="geogebra-graphing"/>
-        <index-page ref="apex-calculus"/>
-        <video privacy="yes"/>
+        <calculator model="geogebra-graphing" />
+        <index-page ref="apex-calculus" />
+        <video privacy="yes" />
         <!-- baseurl should not have a trailing slash -->
-        <baseurl href="https://opentext.uleth.ca/apex-video"/>
+        <baseurl href="vmi.instructure.com" />
         <knowl example="no"/>
         <asymptote links="yes"/>
-        <webwork divisional="dynamic" reading="dynamic"/>
-        <!-- <css toc="crc" banner="crc" navbar="crc" shell="crc"/> -->
+        <webwork divisional="dynamic"/>
     </html>
     <!-- PDF-Specific Options -->
     <latex print="no" sides="one">

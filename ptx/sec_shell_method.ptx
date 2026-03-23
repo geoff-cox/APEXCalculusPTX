@@ -1567,11 +1567,12 @@
 			</match>
 			<match>
 				<premise><m>\pi</m></premise>
+				<response>The area multiplier for the cylindrical shell</response>
 			</match>
 		</cardsort>
 	</exercise>
 
-	<exercise label="APEX-PROTEUS-shell-4-v1" language="math">
+	<exercise label="APEX-PROTEUS-shell-4-v1" language="math" component="proteus">
 		<title>PROTEUS EXERCISE</title>
 		<statement>
 			<p>
@@ -1675,8 +1676,8 @@
 					<p>
 						Since the region runs from <m>y = 0</m> to <m>y = x^2</m>, 
 						the height of a sample shell inside the region at <m>x</m> 
-            is <m>h(x) = x^2 - 0 = x^2</m>. The horizontal line 
-            <m>y = 2</m> is not the upper boundary of this region.
+						is <m>h(x) = x^2 - 0 = x^2</m>. The horizontal line 
+						<m>y = 2</m> is not the upper boundary of this region.
 					</p>
 				</feedback>
 			</choice>

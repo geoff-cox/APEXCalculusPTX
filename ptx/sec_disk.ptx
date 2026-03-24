@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="sec_disk" label="sec_disk">
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_disk" label="sec_disk">
   <title>Volume by Cross-Sectional Area; Disk and Washer Methods</title>
   <p>
     The volume of a general right cylinder,

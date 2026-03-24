@@ -1491,6 +1491,222 @@
     
   </exercise>
 
+	<exercise label="APEX-PROTEUS-shell-2-v2" component="proteus">
+		<title>PROTEUS EXERCISE</title>
+		<statement>
+			<p>
+				A cylindrical shell with radius <m>r</m>, height <m>h</m>, 
+				and thickness <m>\Delta x</m> is cut and unrolled into a 
+				rectangular solid. Several candidate volume expressions are 
+				listed below. Match the correct expression for the volume of 
+				a shell and match each incorrect expression with the reason 
+				it is incorrect.
+			</p>
+			<sidebyside widths="32% 68%">
+				<p><m>\small\text{Expression}</m> ⤵︎</p>
+				<p><m>\small\text{Correct Block or Incorrect Reason}</m> ⤵︎</p>
+			</sidebyside>
+		</statement>
+		<feedback>
+			<p>
+				When the shell is cut and laid flat, the resulting rectangular 
+				solid has length <m>2\pi r</m> (the circumference), height 
+				<m>h</m>, and depth <m>\Delta x</m>. A correct expression must 
+				include all three of these dimensions and no others.
+			</p>
+		</feedback>
+		<cardsort>
+			<match>
+				<premise><m>2\pi r h\,\Delta x</m></premise>
+				<response>The correct volume of a cylindrical shell with thickness <m>\Delta x</m></response>
+			</match>
+			<match>
+				<premise><m>\pi r^2 h</m></premise>
+				<response>This is the volume of a solid cylinder, not a thin shell</response>
+			</match>
+			<match>
+				<premise><m>\pi r h\,\Delta x</m></premise>
+				<response>This is half the volume of a cylindrical shell with thickness <m>\Delta x</m></response>
+			</match>
+			<match>
+				<premise><m>2\pi r^2\,\Delta x</m></premise>
+				<response>This is twice the volume of a disk with radius <m>r</m> and thickness <m>\Delta x</m></response>
+			</match>
+		</cardsort>
+	</exercise>
+
+	<exercise label="APEX-PROTEUS-shell-3-v1" component="proteus">
+		<title>PROTEUS EXERCISE</title>
+		<statement>
+			<p>
+				The Shell Method states that the volume of a solid of revolution is
+				<me>V = 2\pi\int_a^b r(x)\ h(x)\ dx</me>.
+				Match each component of this formula with its geometric meaning.
+			</p>
+			<sidebyside widths="32% 68%">
+				<p><m>\small\text{Component}</m> ⤵︎</p>
+				<p><m>\small\text{Geometric Meaning}</m> ⤵︎</p>
+			</sidebyside>
+		</statement>
+		<cardsort>
+			<match>
+				<premise><m>r(x)</m></premise>
+				<response>Distance from the axis of rotation to the shell</response>
+			</match>
+			<match>
+				<premise><m>h(x)</m></premise>
+				<response>Height of the cylindrical shell</response>
+			</match>
+			<match>
+				<premise><m>2\pi</m></premise>
+				<response>The circumference multiplier</response>
+			</match>
+			<match>
+				<premise><m>dx</m></premise>
+				<response>Thickness of the cylindrical shell</response>
+			</match>
+			<match>
+				<premise><m>\pi</m></premise>
+				<response>The area multiplier for the cylindrical shell</response>
+			</match>
+		</cardsort>
+	</exercise>
+
+	<exercise label="APEX-PROTEUS-shell-4-v1" language="math" component="proteus">
+		<title>PROTEUS EXERCISE</title>
+		<statement>
+			<p>
+				Suppose the region bounded by
+				<me>y = x\ \text{and}\ y = x^2\ \text{for}\ 0 \le x \le 1</me>
+				is revolved about the <m>y</m>-axis.
+			</p>
+			<p>
+				Using the blocks below, construct the integral that gives the
+				volume using the Shell Method.
+			</p>
+		</statement>
+		<blocks layout="horizontal" randomize="yes">
+			<block order="1"><m>V = 2\pi</m></block>
+			<block order="2"><m>\int_0^1</m></block>
+			<block order="3"><m>x\, (</m></block>
+			<block order="4"><m>x</m></block>
+			<block order="5"><m>-</m></block>
+			<block order="6"><m>x^2</m></block>
+			<block order="7"><m>)\, dx</m></block>
+			<block correct="no"><m>V = \pi</m></block>
+			<block correct="no"><m>V = </m></block>
+			<block correct="no"><m>x^2\, (</m></block>
+			<block correct="no"><m>x^2 - x</m></block>
+			<block correct="no"><m>+</m></block>
+			<block correct="no"><m>\int_0^2</m></block>
+			<block correct="no"><m>\int_{-1}^{1}</m></block>
+			<block correct="no"><m>x\, )\, dx</m></block>
+			<block correct="no"><m>)\, x\, dx</m></block>
+		</blocks>
+	</exercise>
+
+	<exercise label="APEX-PROTEUS-shell-5-v1" component="proteus">
+		<title>PROTEUS EXERCISE</title>
+		<statement>
+			<p>
+				The region bounded by <m>y = x^2</m> and <m>y = 0</m> for
+				<m>0 \le x \le 2</m> is revolved about the line
+				<m>x = 3</m>.  A student sets up the following integral:
+				<me>V = 2\pi\int_0^2 x \cdot x^2\ dx = 2\pi\int_0^2 x^3\ dx.</me>
+				Which statement best identifies the error?
+			</p>
+		</statement>
+		<choices randomize="yes">
+			<choice correct="yes">
+				<statement>
+					<p>
+						The radius of each shell is the distance from the
+						shell to the axis <m>x = 3</m>, which is
+						<m>3 - x</m>, not <m>x</m>. <m>V</m> should be
+						<me>
+							V = 2\pi\int_0^2(3-x)\cdot x^2\ dx
+						</me>.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						The radius of a shell at position <m>x</m> is
+						the distance from <m>x</m> to the axis of rotation. 
+						Because the axis is <m>x = 3</m>, this distance is 
+						<m>r(x) = 3 - x</m>. The height is still 
+						<m>h(x) = x^2</m>, giving
+						<me>
+							V = 2\pi\int_0^2 (3-x)\ x^2\ dx
+						</me>.
+					</p>
+				</feedback>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						The limits of integration should run from <m>0</m>
+						to <m>3</m> to match the position of the axis. <m>V</m> should be
+						<me>
+							V = 2\pi\int_0^3 x^3\ dx
+						</me>.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						The limits of integration indicate the range of the 
+						<m>x</m>-values of the region being revolved,
+						which is <m>[0,2]</m>. Moving the axis of rotation
+						does not change the limits; it changes the
+						<em>radius</em> of the shells, given by <m>r(x)</m>.
+					</p>
+				</feedback>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						The height of each shell should be <m>2 - x^2</m>
+						rather than <m>x^2</m>, because the height is
+						measured downward from <m>y = 2</m>. <m>V</m> should be
+						<me>
+							V = 2\pi\int_0^2 x\cdot(2-x^2)\ dx
+						</me>.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						Since the region runs from <m>y = 0</m> to <m>y = x^2</m>, 
+						the height of a sample shell inside the region at <m>x</m> 
+						is <m>h(x) = x^2 - 0 = x^2</m>. The horizontal line 
+						<m>y = 2</m> is not the upper boundary of this region.
+					</p>
+				</feedback>
+			</choice>
+			<choice>
+				<statement>
+					<p>
+						The factor <m>2\pi</m> should be replaced by
+						<m>\pi</m>, because the axis of rotation is a
+						vertical line rather than a horizontal one. <m>V</m> should be
+						<me>
+							V = \pi\int_0^2 x^3\ dx
+						</me>.
+					</p>
+				</statement>
+				<feedback>
+					<p>
+						The factor <m>2\pi</m> in the Shell Method comes
+						from the circumference of each cylindrical shell
+						and is always present, regardless of whether the
+						axis of rotation is horizontal or vertical. Changing
+						the axis orientation affects the radius of the shell
+						and the variables of integration, not the
+						leading constant.
+					</p>
+				</feedback>
+			</choice>
+		</choices>
+	</exercise>
+
   <p>
     As in the previous section,
     the real goal of this section is not to be able to compute volumes of certain solids.

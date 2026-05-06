@@ -1093,6 +1093,282 @@
     </p>
   </subsection>
 
+  <exercises xml:id="geoffs-proteus-questions">
+    <title>Geoff's Problems</title>
+
+    <introduction>
+      <p>Take the ones you want, delete the rest</p>
+    </introduction>
+
+    <exercise label="APEX-PROTEUS-par-calc-1-v1" component="proteus">
+      <title>Quotient from the Chain Rule</title>
+      <statement>
+        <p>
+          Suppose <m>x=f(t)</m> and <m>y=g(t)</m>. Which statement correctly explains why the section writes
+          <m>\dfrac{dy}{dx} = \dfrac{g'(t)}{f'(t)}</m>?
+        </p>
+      </statement>
+      <choices randomize="yes">
+        <choice>
+          <statement>
+            <p>
+              Because <m>\frac{dy}{dt}</m> and <m>\frac{dx}{dt}</m> are always equal for parametric curves.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              The two derivatives measure different rates of change, so they are not generally equal. The quotient comes from the Chain Rule identity <m>\dfrac{dy}{dt}=\dfrac{dy}{dx}\dfrac{dx}{dt}</m>.
+            </p>
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The Chain Rule gives <m>\frac{dy}{dt}=\frac{dy}{dx}\frac{dx}{dt}</m>, so dividing by <m>\frac{dx}{dt}</m> isolates the slope with respect to <m>x</m> when <m>x'(t)\neq 0</m>.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              This is the key transition in the section: the slope in the <m>xy</m>-plane is recovered from the two derivatives with respect to the parameter <m>t</m>.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Because parametric curves use <m>t</m> instead of <m>x</m>, the derivative with respect to <m>x</m> is the product <m>g'(t)f'(t)</m>.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              The section derives a quotient, not a product. We divide by <m>x'(t)</m> because we are converting a rate with respect to <m>t</m> into a rate with respect to <m>x</m>.
+            </p>
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <p>
+              Tangent lines for parametric curves depend only on <m>y'(t)</m>.
+            </p>
+          </statement>
+          <feedback>
+            <p>
+              Both coordinates matter. A tangent slope compares the change in <m>y</m> to the change in <m>x</m>, so both <m>y'(t)</m> and <m>x'(t)</m> appear.
+            </p>
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+
+    <exercise label="chkpt-parcalc-cardsort-dydx-formula" language="math" component="proteus">
+      <title>Assembling the Parametric Slope Formula</title>
+      <statement>
+        <p>
+          Arrange the expressions below in the correct order to complete
+          the chain-rule derivation of <m>\dfrac{dy}{dx}</m> for parametric
+          equations <m>x = f(t)</m>, <m>y = g(t)</m>.
+          Begin with the Chain Rule and end with the final formula.
+        </p>
+      </statement>
+      <blocks layout="horizontal" randomize="yes">
+        <block order="1"><m>\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt}</m></block>
+        <block order="2"><m>\dfrac{dy}{dx} = \dfrac{dy/dt}{dx/dt}</m></block>
+        <block order="3"><m>\dfrac{dy}{dx} = \dfrac{g'(t)}{f'(t)}</m></block>
+        <block correct="no"><m>\dfrac{dy}{dx} = \dfrac{f'(t)}{g'(t)}</m></block>
+        <block correct="no"><m>\dfrac{dy}{dx} = \dfrac{dx/dt}{dy/dt}</m></block>
+      </blocks>
+    </exercise>
+
+    <exercise label="APEX-PROTEUS-par-calc-1-v11" component="proteus">
+      <title>Anatomy of <m>\frac{dy}{dx}</m> for Parametric Curves</title>
+      <statement>
+        <p>
+          Given parametric equations <m>x=f(t)</m> and <m>y=g(t)</m>, the slope of the tangent line is computed by
+          <me>\frac{dy}{dx} = \frac{g'(t)}{f'(t)}, \qquad f'(t)\neq 0</me>.
+          Match each object on the left with what it represents in the tangent-line formula.
+        </p>
+        <sidebyside widths="36% 64%">
+          <p><m>\small\text{Object}</m> ⤵︎</p>
+          <p><m>\small\text{Role in the formula}</m> ⤵︎</p>
+        </sidebyside>
+      </statement>
+      <feedback>
+        <p>
+          The chain rule gives <m>\frac{dy}{dt} = \frac{dy}{dx}\cdot\frac{dx}{dt}</m>, so solving for <m>\frac{dy}{dx}</m> puts <m>g'(t)</m> on top and <m>f'(t)</m> on the bottom. The formula is a function of <m>t</m>, not <m>x</m>. Slopes on a parametric curve are indexed by the parameter. The restriction <m>f'(t)\neq 0</m> is what prevents a divide-by-zero; geometrically, those values of <m>t</m> are where the tangent line is vertical.
+        </p>
+      </feedback>
+      <cardsort>
+        <match>
+          <premise><m>g'(t)</m></premise>
+          <response>Numerator of <m>dy/dx</m>; the rate of change of <m>y</m> with respect to <m>t</m></response>
+        </match>
+        <match>
+          <premise><m>f'(t)</m></premise>
+          <response>Denominator of <m>dy/dx</m>; the rate of change of <m>x</m> with respect to <m>t</m></response>
+        </match>
+        <match>
+          <premise><m>t</m></premise>
+          <response>The independent variable that <m>dy/dx</m> is a function of</response>
+        </match>
+        <match>
+          <premise><m>f'(t)\neq 0</m></premise>
+          <response>The condition required for the tangent line to be non-vertical</response>
+        </match>
+        <match>
+          <response>The axis of rotation for the solid</response>
+        </match>
+        <match>
+          <premise><m>g(t)</m></premise>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="APEX-PROTEUS-par-calc-4-v11" component="proteus">
+      <title>Diagnosing a Point on a Parametric Curve</title>
+      <statement>
+        <p>
+          A student is told that at some parameter value <m>t=t_0</m> on a parametric curve, the derivative values <m>f'(t_0)</m> and <m>g'(t_0)</m> are as given on the left. Match each pair of derivative values with the most appropriate description of what is happening on the curve.
+        </p>
+        <sidebyside widths="42% 58%">
+          <p><m>\small\text{Values of }f'(t_0),\ g'(t_0)</m> ⤵︎</p>
+          <p><m>\small\text{What is happening at }\ t=t_0</m> ⤵︎</p>
+        </sidebyside>
+      </statement>
+      <feedback>
+        <p>
+          The slope formula <m>dy/dx = g'(t)/f'(t)</m> reads off four distinct geometric situations depending on which derivatives vanish. A zero numerator with a nonzero denominator gives slope <m>0</m> (horizontal tangent); a zero denominator with a nonzero numerator gives an undefined slope (vertical tangent); both zeros give <m>0/0</m>, which often indicates a cusp and may require an L'Hôpital-style limit to resolve; neither zero gives an ordinary oblique tangent line.
+        </p>
+      </feedback>
+      <cardsort>
+        <match>
+          <premise><m>f'(t_0) = 2,\ g'(t_0) = 0</m></premise>
+          <response>Horizontal tangent line when <m>t = t_0</m></response>
+        </match>
+        <match>
+          <premise><m>f'(t_0) = 0,\ g'(t_0) = -3</m></premise>
+          <response>Vertical tangent line when <m>t = t_0</m></response>
+        </match>
+        <match>
+          <premise><m>f'(t_0) = 0,\ g'(t_0) = 0</m></premise>
+          <response>Slope is indeterminate; the curve may have a cusp at <m>t = t_0</m></response>
+        </match>
+        <match>
+          <premise><m>f'(t_0) = 4,\ g'(t_0) = -1</m></premise>
+          <response>Non-vertical tangent line with a finite, nonzero slope when <m>t = t_0</m></response>
+        </match>
+        <match>
+          <response>There is an inflection point at <m>t = t_0</m></response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="APEX-PROTEUS-par-calc-5-v11" component="proteus">
+      <title>Deriving the Parametric Arc Length Formula</title>
+      <statement>
+        <p>
+          The parametric arc length formula is obtained from the familiar Cartesian arc length formula by substituting <m>\frac{dy}{dx} = g'(t)/f'(t)</m> and <m>dx = f'(t)\,dt</m>. Drag the blocks below into the correct order to complete the derivation, starting from the Cartesian integral and ending at the parametric form.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          The derivation relies on two substitutions. First, <m>\left(\frac{dy}{dx}\right)^2 = \frac{g'(t)^2}{f'(t)^2}</m>, so the radicand becomes <m>1 + \frac{g'(t)^2}{f'(t)^2} = \frac{f'(t)^2 + g'(t)^2}{f'(t)^2}</m>. Pulling that out of the square root gives <m>\frac{\sqrt{f'(t)^2+g'(t)^2}}{|f'(t)|}</m>. Second, <m>dx = f'(t)\,dt</m> cancels the <m>f'(t)</m> in the denominator, and the bounds change from <m>x</m>-bounds to <m>t</m>-bounds. The result is a formula that is symmetric in <m>f'(t)</m> and <m>g'(t)</m>.
+        </p>
+      </feedback>
+      <blocks layout="horizontal" randomize="yes">
+        <block order="1"><m>\displaystyle L = \int_a^b \sqrt{1+\left(\dfrac{dy}{dx}\right)^2}\,dx</m></block>
+        <block order="2"><m>=\ \displaystyle\int_a^b \sqrt{1+\dfrac{g'(t)^2}{f'(t)^2}}\,dx</m></block>
+        <block order="3"><m>=\ \displaystyle\int_a^b \sqrt{f'(t)^2 + g'(t)^2}\cdot \dfrac{1}{f'(t)}\,dx</m></block>
+        <block order="4"><m>=\ \displaystyle\int_{t_1}^{t_2} \sqrt{f'(t)^2 + g'(t)^2}\,dt</m></block>
+        <block correct="no"><m>L =\ \displaystyle\int_{a}^{b} \sqrt{1 + g'(x)^2}\,dx</m></block>
+        <block correct="no"><m>=\ \displaystyle\int_a^b \sqrt{f'(t)^2 + g'(t)^2}\,dx</m></block>
+        <block correct="no"><m>=\ \displaystyle\int_{t_1}^{t_2} \sqrt{1 + g'(t)^2}\,dt</m></block>
+        <block correct="no"><m>=\ \displaystyle\int_{t_1}^{t_2} \dfrac{g'(t)}{f'(t)}\,dt</m></block>
+      </blocks>
+    </exercise>
+
+    <exercise label="APEX-PROTEUS-par-calc-6-v11" component="proteus">
+      <title>Arc Length Integrals: Correct vs. Flawed Setups</title>
+      <statement>
+        <p>
+          Consider the parametric curve <m>x=f(t)=t^2</m>, <m>y=g(t)=t^3</m> on the interval <m>[0,2]</m>. Several candidate expressions for its arc length are listed below. Match each incorrect setup with the reason it fails.
+        </p>
+        <sidebyside widths="40% 60%">
+          <p><m>\small\text{Candidate expression}</m> ⤵︎</p>
+          <p><m>\small\text{Correct or Reason it fails}</m> ⤵︎</p>
+        </sidebyside>
+      </statement>
+      <feedback>
+        <p>
+          The parametric arc length formula is <m>L = \int_{t_1}^{t_2}\sqrt{f'(t)^2 + g'(t)^2}\,dt</m>. With <m>f'(t)=2t</m> and <m>g'(t)=3t^2</m>, the correct integrand is <m>\sqrt{4t^2 + 9t^4}</m> and the bounds are the <m>t</m>-bounds <m>[0,2]</m>. Two common errors: adding <m>f'</m> and <m>g'</m> inside the root without squaring, and integrating with respect to <m>x</m> over the <m>x</m>-bounds. Another is dropping the <m>1</m> from the Cartesian formula but keeping <m>dx</m>.
+        </p>
+      </feedback>
+      <cardsort>
+        <match>
+          <premise><m>\displaystyle\int_0^2 \sqrt{(2t)^2 + (3t^2)^2}\,dt</m></premise>
+          <response>The correct parametric arc length integral</response>
+        </match>
+        <match>
+          <premise><m>\displaystyle\int_0^2 \sqrt{2t + 3t^2}\,dt</m></premise>
+          <response>Forgot to square <m>f'(t)</m> and <m>g'(t)</m> inside the radical</response>
+        </match>
+        <match>
+          <premise><m>\displaystyle\int_0^4 \sqrt{(2t)^2 + (3t^2)^2}\,dx</m></premise>
+          <response>Mixed <m>x</m>-bounds with a <m>dt</m> integrand; bounds and differential are inconsistent</response>
+        </match>
+        <match>
+          <premise><m>\displaystyle\int_0^2 \sqrt{1+\left(\dfrac{3t^2}{2t}\right)^2}\,dt</m></premise>
+          <response>Used the Cartesian integrand <m>\sqrt{1+(dy/dx)^2}</m> but integrated with respect to <m>t</m> instead of <m>x</m></response>
+        </match>
+        <match>
+          <response>This is the area enclosed by the curve, not its length</response>
+        </match>
+      </cardsort>
+    </exercise>
+
+    <exercise label="APEX-PROTEUS-par-calc-8-v11" component="proteus">
+      <title>Signature Factors Across the Section</title>
+      <statement>
+        <p>
+          Every formula in this section is an integral in <m>t</m>, and each one is identified by a <em>signature factor</em> that sits in front of or inside the common piece. Match each quantity with the factor that uniquely identifies it.
+        </p>
+        <sidebyside widths="50% 50%">
+          <p><m>\small\text{Associated Quantity}</m> ⤵︎</p>
+          <p><m>\small\text{Signature factor in Integral}</m> ⤵︎</p>
+        </sidebyside>
+      </statement>
+      <feedback>
+        <p>
+          The slope <m>dy/dx</m> is the only quantity in the list that is <em>not</em> an integral; its signature is the ratio <m>g'(t)/f'(t)</m>. Arc length is the <q>bare</q> integral <m>\int \sqrt{f'(t)^2+g'(t)^2}\,dt</m> with no extra factor. Surface area about the <m>x</m>-axis adds a factor of <m>2\pi\cdot g(t)</m> (circumference with radius <m>g(t)</m>); surface area about the <m>y</m>-axis swaps that for <m>2\pi\cdot f(t)</m>. Keeping track of which function plays the role of <q>radius</q> is the most frequent stumbling block when setting up surface area integrals.
+        </p>
+      </feedback>
+      <cardsort>
+        <match>
+          <premise>Slope of the tangent line, <m>\dfrac{dy}{dx}</m></premise>
+          <response><m>\dfrac{g'(t)}{f'(t)}</m></response>
+        </match>
+        <match>
+          <premise>Arc length on <m>[t_1,t_2]</m></premise>
+          <response><m>\sqrt{f'(t)^2+g'(t)^2}</m>, integrated with no extra factor</response>
+        </match>
+        <match>
+          <premise>Surface area when rotated about the <m>x</m>-axis</premise>
+          <response><m>2\pi\,g(t)</m> multiplying the arc-length integrand</response>
+        </match>
+        <match>
+          <premise>Surface area when rotated about the <m>y</m>-axis</premise>
+          <response><m>2\pi\,f(t)</m> multiplying the arc-length integrand</response>
+        </match>
+        <match>
+          <response><m>\pi\big(f(t)\big)^2</m> multiplying <m>dt</m></response>
+        </match>
+        <match>
+          <premise>Concavity indicator <m>\dfrac{d^2y}{dx^2}</m></premise>
+        </match>
+      </cardsort>
+    </exercise>
+
+  </exercises>
+
   <exercises>
     <subexercises xml:id="TaC-parametric-calc">
       <title>Terms and Concepts</title>
